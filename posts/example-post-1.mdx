@@ -7,101 +7,122 @@ description: >-
   across all pages and elements.
 date: '2025-01-06'
 ---
-A style guide for a website is a set of design standards that define the look, feel, and behavior of a digital product, ensuring consistency and cohesion across all pages and elements. It typically includes guidelines for colors, typography, spacing, buttons, icons, and imagery, as well as instructions on voice and tone for content.
+<!DOCTYPE html>
 
-# h1 Heading
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BananaFi - The Ultimate Meme Coin</title>
+    <style>
+        @import url('https\://fonts.googleapis.com/css2?family=Montserrat:wght\@400;700\&display=swap');
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            text-align: center;
+            background-color: #ffcc00;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            background: url('logo.png') no-repeat center center;
+            background-size: contain;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 4em;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.5em;
+            color: white;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff9900;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .roadmap {
+            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .logo {
+            width: 250px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="/mnt/data/452A7189-7575-497B-9DE9-04E33DCFBBF6.PNG" alt="BananaFi Logo" class="logo">
+        <h1>🍌 Welcome to BananaFi!</h1>
+        <p>The next big meme coin on Solana!</p>
+        <a href="#roadmap" class="button">Explore the Roadmap</a>
+        <a href="#" class="button">Buy on Raydium</a>
+    </div>
 
-## h2 Heading
+    <div class="container">
+        <h2>Tokenomics</h2>
+        <p>💰 Total Supply: 10,000,000 $BANANA</p>
+        <p>💎 Auto-Staking: Passive Rewards Just for Holding!</p>
+        <p>🔥 Hyper-Deflationary Mechanism</p>
+        
+        <h2 id="roadmap">📜 Roadmap</h2>
+        <div class="roadmap">
+            <h3>Phase 1 - The Jungle Awakens 🌴</h3>
+            <ul>
+                <li>✅ Token Creation & Solana Deployment</li>
+                <li>✅ Liquidity Pool on Raydium</li>
+                <li>✅ Listings on Dexscreener & First Exchanges</li>
+                <li>✅ Website & Social Media Hype</li>
+            </ul>
+            <h3>Phase 2 - Monkey Business Begins 🐵</h3>
+            <ul>
+                <li>💡 Community Airdrops & Giveaways</li>
+                <li>💡 CoinGecko & CoinMarketCap Listings</li>
+                <li>💡 Staking Mechanism Goes Live</li>
+                <li>💡 Exclusive NFT Collection Launch</li>
+            </ul>
+            <h3>Phase 3 - Bananas to the Moon 🚀</h3>
+            <ul>
+                <li>🚀 Play-to-Earn Game Release</li>
+                <li>🚀 BananaFi DAO for Community Governance</li>
+                <li>🚀 Strategic Partnerships with Crypto Giants</li>
+            </ul>
+        </div>
+    </div>
 
-### h3 Heading
+    <div class="footer">
+        <p>🚀 Join the Banana Army! Follow us for updates.</p>
+        <a href="#" class="button">Join Telegram</a>
+        <a href="https://twitter.com/x/migrate?tok=7b2265223a222f62616e616e616669303f733d3131222c2274223a313734303235393938377d292caba815ec053199574a2487df277a" class="button">Follow on X</a>
+    </div>
 
-#### h4 Heading
+</body>
+</html>
 
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
-
-***
-
-## Emphasis
-
-**This is bold text**
-
-**This is bold text**
-
-*This is italic text*
-
-*This is italic text*
-
-~~Strikethrough~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
->
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
-
-## Lists
-
-Unordered
-
-*   Lorem ipsum dolor sit amet
-*   Consectetur adipiscing elit
-*   Integer molestie lorem at massa
-
-Ordered
-
-1.  Lorem ipsum dolor sit amet
-2.  Consectetur adipiscing elit
-3.  Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
-
-Block code
-
-```
-npm install netlify-cli -g
-```
-
-Syntax highlighting
-
-```js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
-```
-
-## Tables
-
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
-
-## Links
-
-*   [Next.js on Netlify](https://docs.netlify.com/frameworks/next-js/overview/)
-*   [Use Visual Editor with Next.js](https://docs.netlify.com/visual-editor/frameworks/next/)
-
-## Image
-
-Recommended image orientation is horizontal. You can adjust the image component to your needs in `components/CustomImage.js`.
-
-![Image alt text](/images/random-image.jpeg "Image Title")
